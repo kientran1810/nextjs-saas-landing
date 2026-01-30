@@ -2,9 +2,9 @@
     <img width="100%" src="https://i.imgur.com/XjcKIXF.png">
   </a>
 
-# Stargate: NextJS SaaS Project Template
+# IBaoHiem: NextJS SaaS Project Template
 
-Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.
+IBaoHiem is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.
 
 ## Getting started
 

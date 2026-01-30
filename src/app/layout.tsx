@@ -15,7 +15,8 @@ interface LayoutProps {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#e141c0",
+  // themeColor: "#e141c0",
+  themeColor: "#FF5733",
   colorScheme: "light",
   initialScale: 1,
   width: "device-width",
@@ -23,19 +24,19 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    template: "Stargate | %s",
-    default: "Stargate | NextJS SaaS Landing",
+    template: "IBaoHiem | %s",
+    default: "IBaoHiem | NextJS SaaS Landing",
   },
   description:
-    "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
+    "Landing page.",
   icons: [{ rel: "icon", url: favicon.src }],
-  metadataBase: new URL("https://stargate.nfteam.eu/"),
+  metadataBase: new URL("http://localhost:3000"),
   openGraph: {
-    title: "Stargate | NextJS SaaS Landing",
-    siteName: "Stargate | NextJS SaaS Landing",
+    title: "IBaoHiem",
+    siteName: "IBaoHiem",
     description:
-      "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
-    url: "https://stargate.nfteam.eu/",
+      "Landing page.",
+    url: "http://localhost:3000/",
     type: "website",
     locale: "hu_HU",
     images: [
@@ -43,28 +44,28 @@ export const metadata: Metadata = {
         url: SummaryLargeImage.src,
         width: SummaryLargeImage.width,
         height: SummaryLargeImage.height,
-        alt: "Stargate | NextJS SaaS Landing",
+        alt: "IBaoHiem",
       },
     ],
   },
   twitter: {
-    title: "Stargate | NextJS SaaS Landing",
-    creator: "@nfteam_eu",
-    site: "@nfteam_eu",
+    title: "IBaoHiem",
+    creator: "@KienTran",
+    site: "@KienTran",
     description:
-      "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
+      "Landing page",
     card: "summary_large_image",
     images: [
       {
         url: SummaryLargeImage.src,
         width: SummaryLargeImage.width,
         height: SummaryLargeImage.height,
-        alt: "Stargate | NextJS SaaS Landing",
+        alt: "Landing page",
       },
     ],
   },
   alternates: {
-    canonical: "https://stargate.nfteam.eu/",
+    canonical: "http://localhost:3000/",
   },
 };
 

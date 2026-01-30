@@ -1,9 +1,10 @@
 import Header from "../components/Header";
-import Audience from "../components/Audience";
+// import Audience from "../components/Audience";
 import Features from "../components/Features";
 import Functions from "../components/Functions";
-import Product from "../components/Product";
-import Pricing from "../components/Pricing";
+// import Product from "../components/Product";
+// import Pricing from "../components/Pricing";
+import Partners from "../components/Partners";
 
 export default function Home() {
   return (
@@ -11,9 +12,10 @@ export default function Home() {
       <Header />
       <Features />
       <Functions />
-      <Audience />
-      <Product />
-      <Pricing />
+      {/* <Audience /> */}
+      {/* <Product /> */}
+      {/* <Pricing /> */}
+      <Partners />
     </main>
   );
 }

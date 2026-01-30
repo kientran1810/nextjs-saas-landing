@@ -4,12 +4,15 @@ import { Flex, Grid, Heading, Icon, Text } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
 import { IconType } from "react-icons";
 import {
-  LuBot,
-  LuCreditCard,
-  LuGauge,
-  LuLanguages,
-  LuLayoutTemplate,
-  LuLifeBuoy,
+  LuHeart,
+  LuCar,
+  LuPlane,
+  LuAlertTriangle,
+  LuShield,
+  LuFlame,
+  LuBuilding2,
+  LuUsers,
+  LuStar,
 } from "react-icons/lu";
 
 const Features = () => {
@@ -31,8 +34,11 @@ const Features = () => {
         }}
         textAlign={"center"}
       >
-        Your Favourite AI Tool
+        Sản phẩm bảo hiểm
       </Heading>
+      <Text color={StargateColors.grey} textAlign="center" mt={4} maxW={600}>
+        Các sản phẩm bảo hiểm tiêu biểu
+      </Text>
       <Grid
         templateColumns={{
           base: "repeat(1, 1fr)",
@@ -59,7 +65,7 @@ interface CardProps {
 }
 
 const Card = ({ icon, title, children }: CardProps) => (
-  <Flex maxW={350} role="group">
+  <Flex maxW={350} role="group" cursor="pointer">
     <Icon
       as={icon}
       fontSize={48}
@@ -87,34 +93,49 @@ const Card = ({ icon, title, children }: CardProps) => (
 
 const Cards = [
   {
-    icon: LuBot,
-    title: "AI Generator",
-    text: "Automate and optimize with our advanced AI technology, designed for efficiency and smarter decision-making.",
+    icon: LuHeart,
+    title: "Bảo hiểm sức khỏe",
+    text: "Bảo hiểm sức khỏe toàn diện, bảo vệ bạn và gia đình trước rủi ro bệnh tật, tai nạn. An tâm chăm sóc sức khỏe!",
   },
   {
-    icon: LuGauge,
-    title: "Dashboard",
-    text: "Monitor performance at a glance with our user-friendly dashboard, your command center for data insights.",
+    icon: LuCar,
+    title: "Bảo hiểm ô tô",
+    text: "Bảo vệ toàn diện xe cơ giới trước rủi ro va chạm, hư hỏng, mất cắp. An tâm trên mọi hành trình!",
   },
   {
-    icon: LuCreditCard,
-    title: "Secure Payments",
-    text: "Experience safe and reliable transactions with our robust, encrypted payment system.",
+    icon: LuPlane,
+    title: "Bảo hiểm du lịch",
+    text: "Đồng hành mọi chuyến đi với bảo hiểm du lịch, bảo vệ bạn trước rủi ro sức khỏe, hành lý, và sự cố bất ngờ.",
   },
   {
-    icon: LuLanguages,
-    title: "Multilang",
-    text: "Reach a global audience with multi-language support, enhancing user experience across borders.",
+    icon: LuAlertTriangle,
+    title: "Bảo hiểm tai nạn",
+    text: "An tâm trước mọi rủi ro với bảo hiểm tai nạn, hỗ trợ tài chính kịp thời cho chi phí điều trị.",
   },
   {
-    icon: LuLayoutTemplate,
-    title: "Ready-to-use templates",
-    text: "Kickstart your project with our versatile, easy-to-customize templates for any use case.",
+    icon: LuShield,
+    title: "Bảo hiểm nhân thọ",
+    text: "Bảo vệ tài chính dài hạn, chăm sóc sức khỏe và tích lũy cho tương lai với bảo hiểm nhân thọ.",
   },
   {
-    icon: LuLifeBuoy,
-    title: "Support Centre",
-    text: "Get prompt, expert support when you need it. We're here to ensure your seamless experience.",
+    icon: LuFlame,
+    title: "Bảo hiểm cháy nổ",
+    text: "Bảo vệ tài sản trước rủi ro cháy nổ với bảo hiểm toàn diện, giúp bạn giảm thiểu tổn thất.",
+  },
+  {
+    icon: LuUsers,
+    title: "Bảo hiểm sức khỏe tổ chức",
+    text: "Bảo vệ sức khỏe nhân viên, chi trả chi phí y tế, khám chữa bệnh, đảm bảo an tâm làm việc.",
+  },
+  {
+    icon: LuStar,
+    title: "Bảo hiểm sức khỏe tổ chức",
+    text: "Bảo vệ sức khỏe nhân viên, chi trả chi phí y tế, khám chữa bệnh, đảm bảo an tâm làm việc.",
+  },
+  {
+    icon: LuBuilding2,
+    title: "Bảo hiểm xây dựng",
+    text: "Đảm bảo an toàn công trình, bồi thường thiệt hại vật chất, tai nạn lao động trong quá trình thi công.",
   },
 ];
 

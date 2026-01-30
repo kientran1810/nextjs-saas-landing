@@ -21,7 +21,7 @@ const Audience = () => {
         textAlign={"center"}
         mb={10}
       >
-        We recommend Stargate for
+        We recommend IBaoHiem for
       </Heading>
       <Grid
         templateColumns={{
@@ -98,13 +98,39 @@ const Card = ({ color, children }: CardProps) => {
 };
 
 const Cards = [
+  // Default colors
+  // {
+  //   title: "Digital Agencies",
+  //   color: "#E6990B",
+  // },
+  // {
+  //   title: "Designers",
+  //   color: "#A431C7",
+  // },
+  // {
+  //   title: "Entrepreneurs",
+  //   color: "#42C9B2",
+  // },
+  // {
+  //   title: "Developers",
+  //   color: "#348FDA",
+  // },
+  // {
+  //   title: "Students",
+  //   color: "#41B668",
+  // },
+  // {
+  //   title: "Startups",
+  //   color: "#DA4D8F",
+  // },
+
   {
     title: "Digital Agencies",
-    color: "#E6990B",
+    color: "#FFC107",
   },
   {
     title: "Designers",
-    color: "#A431C7",
+    color: "#ff5f5f",
   },
   {
     title: "Entrepreneurs",
@@ -120,7 +146,7 @@ const Cards = [
   },
   {
     title: "Startups",
-    color: "#DA4D8F",
+    color: "#ff3333",
   },
 ];
 
