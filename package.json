@@ -14,10 +14,13 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "framer-motion": "^10.16.16",
+    "gray-matter": "^4.0.3",
     "next": "14.0.4",
+    "next-mdx-remote": "^5.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "rehype-slug": "^6.0.0",
     "sass": "^1.69.5"
   },
   "devDependencies": {

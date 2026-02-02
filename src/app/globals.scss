@@ -86,7 +86,8 @@ a {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #e340bf #ffffff;
+  // scrollbar-color: #e340bf #ffffff;
+  scrollbar-color: #ce0000 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -99,5 +100,6 @@ a {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #e340bf;
+  // background-color: #e340bf;
+  background-color: #ff4e27;
 }

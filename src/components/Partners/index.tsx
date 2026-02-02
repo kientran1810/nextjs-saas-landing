@@ -114,13 +114,13 @@ const Partners = () => {
               bg="white"
               borderRadius="xl"
               border="2px solid"
-              borderColor="gray.200"
+              borderColor="red.200"
               boxShadow="sm"
               transition="all 0.3s ease"
               _hover={{
                 transform: "translateY(-8px)",
                 boxShadow: "xl",
-                borderColor: StargateColors.tertiaryBlue,
+                borderColor: StargateColors.primary,
                 // bg: "red.50",
               }}
             >

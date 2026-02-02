@@ -19,13 +19,15 @@ import { LuMenu, LuX, LuChevronDown } from "react-icons/lu";
 import { motion } from "framer-motion";
 import { StargateColors } from "#/src/utils/Colors";
 import useBannerVisibility from "#/src/utils/BannerVisibility";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const NavItems = [
   { 
     name: "Sức khỏe", 
     href: "/#features",
     dropdown: [
-      { name: "Bảo hiểm sức khỏe cá nhân", href: "/#health-individual" },
+      { name: "Bảo Việt An Gia", href: "/san-pham/bao-viet-an-gia" },
+      { name: "Bảo Việt InterCare", href: "/san-pham/bao-viet-intercare" },
       { name: "Bảo hiểm sức khỏe gia đình", href: "/#health-family" }
     ]
   },
@@ -118,7 +120,6 @@ const Navbar: FC = () => {
         w="100%"
         justify="center"
         align="center"
-        backdropFilter={isScrolled ? "none" : "blur(24px)"}
         minH={75}
         transition="all .25s ease"
         direction="column"
@@ -184,6 +185,11 @@ const Navbar: FC = () => {
             ))}
           </Flex>
 
+          {/* Language Switcher - Desktop */}
+          <Box display={{ base: "none", lg: "block" }}>
+            <LanguageSwitcher isScrolled={isScrolled} />
+          </Box>
+
           {/* <Flex gap={4} display={{ base: "none", lg: "flex" }}>
             <Button variant="link" color={isScrolled ? "black" : "white"}>
               Đăng nhập
@@ -247,6 +253,12 @@ const Navbar: FC = () => {
                 ))}
               </Box>
             ))}
+            
+            {/* Language Switcher - Mobile */}
+            <Box mt={3}>
+              <LanguageSwitcher isScrolled={isScrolled} />
+            </Box>
+            
             <Flex gap={5} mt={5}>
               <Button variant="link" color={isScrolled ? "black" : "white"}>
                 Đăng nhập
