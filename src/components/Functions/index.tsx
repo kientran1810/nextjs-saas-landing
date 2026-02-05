@@ -87,7 +87,7 @@ const FeatureCard = ({ icon, title, description }: FeatureCardProps) => (
     <Icon
       as={icon}
       fontSize={48}
-      color={StargateColors.primary}
+      color={StargateColors.accent.red}
       mb={4}
       strokeWidth={1.5}
     />

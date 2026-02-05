@@ -2,6 +2,7 @@
 import { Box, Button, Flex } from "@chakra-ui/react";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import React from "react";
+import { StargateColors } from "../utils/Colors";
 
 interface LanguageSwitcherProps {
   isScrolled?: boolean;
@@ -25,14 +26,17 @@ const LanguageSwitcher = ({ isScrolled = false }: LanguageSwitcherProps) => {
       <Button
         size="sm"
         variant={currentLang === "vi" ? "solid" : "ghost"}
-        bg={currentLang === "vi" ? (isScrolled ? "purple.500" : "whiteAlpha.300") : "transparent"}
-        color={currentLang === "vi" ? "white" : (isScrolled ? "gray.700" : "whiteAlpha.800")}
+        bg={currentLang === "vi" ? `${StargateColors.accent.red}` : "transparent"}
+        color={currentLang === "vi" ? "white" : (isScrolled ? "gray.700" : "black")}
         onClick={() => switchLanguage("vi")}
         fontWeight={currentLang === "vi" ? "bold" : "normal"}
         _hover={{
-          bg: currentLang === "vi" 
-            ? (isScrolled ? "purple.600" : "whiteAlpha.400") 
-            : (isScrolled ? "gray.100" : "whiteAlpha.200")
+            bg: currentLang === "vi" 
+                ? `${StargateColors.accent.red}`
+                : (isScrolled ? "gray.100" : `${StargateColors.accent.red}`),
+            color: currentLang === "vi" 
+                ? "white"
+                : (isScrolled ? "black" : "white")
         }}
       >
         VI
@@ -41,14 +45,17 @@ const LanguageSwitcher = ({ isScrolled = false }: LanguageSwitcherProps) => {
       <Button
         size="sm"
         variant={currentLang === "en" ? "solid" : "ghost"}
-        bg={currentLang === "en" ? (isScrolled ? "purple.500" : "whiteAlpha.300") : "transparent"}
-        color={currentLang === "en" ? "white" : (isScrolled ? "gray.700" : "whiteAlpha.800")}
+        bg={currentLang === "en" ? `${StargateColors.accent.red}` : "transparent"}
+        color={currentLang === "en" ? "white" : (isScrolled ? "gray.700" : "black")}
         onClick={() => switchLanguage("en")}
         fontWeight={currentLang === "en" ? "bold" : "normal"}
         _hover={{
-          bg: currentLang === "en" 
-            ? (isScrolled ? "purple.600" : "whiteAlpha.400") 
-            : (isScrolled ? "gray.100" : "whiteAlpha.200")
+            bg: currentLang === "en" 
+                ? `${StargateColors.accent.red}`
+                : (isScrolled ? "gray.100" : `${StargateColors.accent.red}`),
+            color: currentLang === "en" 
+                ? "white"
+                : (isScrolled ? "black" : "white")
         }}
       >
         EN
