@@ -8,7 +8,7 @@ const FooterBg = () => {
       position={"absolute"}
       inset={0}
       zIndex={-2}
-      bg={`#ffc1c1 70%`}
+      bg={`#ffe1e1 70%`}
       bgSize={"100% 100%"}
     />
   );
